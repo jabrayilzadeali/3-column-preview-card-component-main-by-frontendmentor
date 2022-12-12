@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- FrontEndMentor profile: [here](https://www.frontendmentor.io/solutions/3column-preview-card-component-YPAKQMiDWJ)
 - You can view the site: [here](https://jabrayilzadeali.github.io/3-column-preview-card-component-main-by-frontendmentor/)
 
 ## My process
