@@ -1,4 +1,3 @@
-
 :root {
     /* Primary */
     --Bright-orange: hsl(31, 77%, 52%);
@@ -123,10 +122,6 @@ section {
   font-size: 2rem;
   /* height: 25rem; */
 }
-
-/* .card__img {
-  width: 6rem;
-} */
 
 .card__title {
   font-size: 2.5rem;

@@ -1,92 +1,311 @@
-# Frontend Mentor - 3-column preview card component
+# Frontend Mentor - 3-column preview card component solution
 
-![Design preview for the 3-column preview card component coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+## Overview
 
-## The challenge
+### The challenge
 
-Your challenge is to build out this 3-column preview card component and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![](./screenshot.jpg)
+![](./design/my_design_desktop.png)
+![](./design/my_design_mobile_sedans.png)
+![](./design/my_design_mobile_suvs.png)
+![](./design/my_design_mobile_luxury.png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
+### Links
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- You can view the site: [here](https://jabrayilzadeali.github.io/3-column-preview-card-component-main-by-frontendmentor/)
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+## My process
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+### Built with
 
-## Building your project
+- Semantic HTML5 markup
+- CSS custom properties
+- CSS BEM notation
+- CSS Grid
+- Mobile-first workflow
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### What I learned
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-## Deploying your project
+- How to use Bem Notation
+- How to write better css
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+To see how you can add code snippets, see below:
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-## Create a custom `README.md`
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet">
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+  <!-- My Stylesheet -->
+  <link rel="stylesheet" href="style.css"> 
+  <title>Frontend Mentor | 3-column preview card component</title>
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+</head>
+<body>
+  
+  <main class="grid-center">
+    <section class="grid">
+      <article class="card card--bright-orange">
+        <img class="card__img" src="images/icon-sedans.svg" alt="sedan">
+        <h2 class="card__title uppercase">Sedans</h2>
+        <p class="card__description">
+          Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+          or on your next road trip.
+        </p>
+        <button class="button button--bright-orange">Learn More</button>
+      </article>
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+      <article class="card card--dark-cyan">
+        <img class="card__img" src="images/icon-suvs.svg" alt="suvs">
+        <h2 class="card__title uppercase">SUVs</h2>
+        <p class="card__description">
+          Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+          and off-road adventures.
+        </p> 
+        <button class="button button--dark-cyan">Learn More</button>
+      </article>
 
-## Submitting your solution
+      <article class="card card--very-dark-cyan">
+        <img class="card__img" src="images/icon-luxury.svg" alt="luxury">
+        <h2 class="card__title uppercase">Luxury</h2>
+        <p class="card__description">
+          Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+          rental and arrive in style.
+        </p>
+        <button class="button button--very-dark-cyan">Learn More</button>
+      </article>
+    </section>
+  </main>
+  
+</body>
+</html>
+```
+```css
+:root {
+    /* Primary */
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    
+    /* Neutral */
+    --Transparent-white-paragraphs: hsl(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+    /* fonts */
+    --ff-accent: 'Big Shoulders Display', cursive;
+    --ff-base: 'Lexend Deca', sans-serif;
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
 
-## Sharing your solution
 
-There are multiple places you can share your solution:
+/* Josh Comeau css reset */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+body {
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-bold);
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
+  color: var(--Transparent-white-paragraphs);
+}
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+main {
+  padding: 5rem 1rem;
+}
 
-## Got feedback for us?
+section {
+  overflow: hidden;
+  border-radius: 1rem;
+}
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+/* utilities */
+.grid-center {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  overflow: auto;
+}
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+.uppercase {
+  text-transform: uppercase;
+}
 
-**Have fun building!** 🚀
+.button {
+  border-radius: 5rem;
+  border: 0;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  border: 2px solid var(--Very-light-gray-background-headings-buttons);
+}
+
+.button:hover {
+  background-color: transparent;
+  color: var(--Very-light-gray-background-headings-buttons);
+  cursor: pointer;
+}
+
+/* design */
+
+.card {
+  padding: 3rem;
+  font-size: 2rem;
+  /* height: 25rem; */
+}
+
+.card__title {
+  font-size: 2.5rem;
+  margin: 1.7rem 0;
+  color: var(--Very-light-gray-background-headings-buttons);
+}
+
+.card__description{ 
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+  color: var(--Transparent-white-paragraphs);
+  font-size: 0.938rem;
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+}
+
+.card--bright-orange {
+  background-color: var(--Bright-orange); 
+} 
+
+.card--dark-cyan {
+  background-color: var(--Dark-cyan); 
+}
+
+.card--very-dark-cyan {
+  background-color: var(--Very-dark-cyan); 
+}
+
+.button--bright-orange {
+  color: var(--Bright-orange); 
+} 
+
+.button--dark-cyan {
+  color: var(--Dark-cyan); 
+}
+
+.button--very-dark-cyan {
+  color: var(--Very-dark-cyan); 
+}
+
+@media screen and (min-width: 996px) {
+  main, section {
+    padding: 0;
+  }
+
+  section.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 324px);
+    grid-template-rows: 1fr;
+  }
+
+  .button {
+    margin-top: 3rem;
+  }
+
+}
+```
+
+### Useful resources
+
+- [Taking on a Frontend Mentor challenge | Responsive Product Preview Card Component | by Kevin Powell ](https://www.youtube.com/watch?v=B2WL6KkqhLQ&t=1051s) - helped me to understand good css system(BEM, css reset).
+- [Why I use the BEM naming convention for my CSS | by Kevin Powell ](https://www.youtube.com/watch?v=SLjHSVwXYq4) - Fantastic explanation of css BEM notation
+
+
+## Author
+
+- Github - [jabrayilzadeali](https://github.com/jabrayilzadeali)
+- Frontend Mentor - [Jabrayilzade Ali](https://www.frontendmentor.io/profile/jabrayilzadeali)
+- Twitter - [Jabrayilzade Ali](https://twitter.com/JabrayilzadeAli)
