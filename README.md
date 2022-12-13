@@ -28,9 +28,7 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 ![](./design/my_design_desktop.png)
-![](./design/my_design_mobile_sedans.png)
-![](./design/my_design_mobile_suvs.png)
-![](./design/my_design_mobile_luxury.png)
+![](./design/my_design_mobile.png)
 
 
 ### Links
@@ -81,33 +79,33 @@ To see how you can add code snippets, see below:
   <main class="grid-center">
     <section class="grid">
       <article class="card card--bright-orange">
-        <img class="card__img" src="images/icon-sedans.svg" alt="sedan">
+        <img class="card__img" src="images/icon-sedans.svg" alt="" aria-hidden="true">
         <h2 class="card__title uppercase">Sedans</h2>
         <p class="card__description">
           Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
           or on your next road trip.
         </p>
-        <button class="button button--bright-orange">Learn More</button>
+        <a class="button button--bright-orange">Learn More</a>
       </article>
 
       <article class="card card--dark-cyan">
-        <img class="card__img" src="images/icon-suvs.svg" alt="suvs">
+        <img class="card__img" src="images/icon-suvs.svg" alt="" aria-hidden="true">
         <h2 class="card__title uppercase">SUVs</h2>
         <p class="card__description">
           Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
           and off-road adventures.
         </p> 
-        <button class="button button--dark-cyan">Learn More</button>
+        <a class="button button--dark-cyan">Learn More</a>
       </article>
 
       <article class="card card--very-dark-cyan">
-        <img class="card__img" src="images/icon-luxury.svg" alt="luxury">
+        <img class="card__img" src="images/icon-luxury.svg" alt="" aria-hidden="true">
         <h2 class="card__title uppercase">Luxury</h2>
         <p class="card__description">
           Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
           rental and arrive in style.
         </p>
-        <button class="button button--very-dark-cyan">Learn More</button>
+        <a class="button button--very-dark-cyan">Learn More</a>
       </article>
     </section>
   </main>
@@ -115,23 +113,24 @@ To see how you can add code snippets, see below:
 </body>
 </html>
 ```
+
 ```css
 :root {
-    /* Primary */
-    --Bright-orange: hsl(31, 77%, 52%);
-    --Dark-cyan: hsl(184, 100%, 22%);
-    --Very-dark-cyan: hsl(179, 100%, 13%);
-    
-    /* Neutral */
-    --Transparent-white-paragraphs: hsl(0, 0%, 100%, 0.75);
-    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+  /* Primary */
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  
+  /* Neutral */
+  --Transparent-white-paragraphs: hsl(0, 0%, 100%, 0.75);
+  --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
 
-    /* fonts */
-    --ff-accent: 'Big Shoulders Display', cursive;
-    --ff-base: 'Lexend Deca', sans-serif;
+  /* fonts */
+  --ff-accent: 'Big Shoulders Display', cursive;
+  --ff-base: 'Lexend Deca', sans-serif;
 
-    --fw-regular: 400;
-    --fw-bold: 700;
+  --fw-regular: 400;
+  --fw-bold: 700;
 }
 
 
@@ -197,6 +196,7 @@ body {
 }
 
 main {
+  background-color: var(--Very-light-gray-background-headings-buttons);
   padding: 5rem 1rem;
 }
 
@@ -218,12 +218,14 @@ section {
 }
 
 .button {
+  display: inline-block;
   border-radius: 5rem;
   border: 0;
   padding: 1rem 2rem;
   font-size: 1rem;
   font-family: var(--ff-base);
   font-weight: var(--fw-regular);
+  background-color: var(--Very-light-gray-background-headings-buttons);
   border: 2px solid var(--Very-light-gray-background-headings-buttons);
 }
 

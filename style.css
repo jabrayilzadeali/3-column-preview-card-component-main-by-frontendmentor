@@ -101,12 +101,14 @@ section {
 }
 
 .button {
+  display: inline-block;
   border-radius: 5rem;
   border: 0;
   padding: 1rem 2rem;
   font-size: 1rem;
   font-family: var(--ff-base);
   font-weight: var(--fw-regular);
+  background-color: var(--Very-light-gray-background-headings-buttons);
   border: 2px solid var(--Very-light-gray-background-headings-buttons);
 }
 
