@@ -4,15 +4,17 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
+- [Frontend Mentor - 3-column preview card component solution](#frontend-mentor---3-column-preview-card-component-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
 
 
 ## Overview
@@ -188,6 +190,8 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+/* My Design */
+
 body {
   font-family: var(--ff-accent);
   font-weight: var(--fw-bold);
@@ -203,6 +207,10 @@ main {
 section {
   overflow: hidden;
   border-radius: 1rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* utilities */
@@ -227,6 +235,7 @@ section {
   font-weight: var(--fw-regular);
   background-color: var(--Very-light-gray-background-headings-buttons);
   border: 2px solid var(--Very-light-gray-background-headings-buttons);
+  transition: .5s;
 }
 
 .button:hover {

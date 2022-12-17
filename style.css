@@ -71,6 +71,8 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+/* My Design */
+
 body {
   font-family: var(--ff-accent);
   font-weight: var(--fw-bold);
@@ -86,6 +88,10 @@ main {
 section {
   overflow: hidden;
   border-radius: 1rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* utilities */
@@ -110,6 +116,7 @@ section {
   font-weight: var(--fw-regular);
   background-color: var(--Very-light-gray-background-headings-buttons);
   border: 2px solid var(--Very-light-gray-background-headings-buttons);
+  transition: .5s;
 }
 
 .button:hover {
